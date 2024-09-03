@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alpine+tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+
+
+
+    <style>
+ @font-face {
+  font-family: 'ClashGrotesk-Bold';
+  src: url('./fonts/ClashGrotesk-Bold.woff') format('woff');    
+   
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+.font-clash {
+    font-family: 'ClashGrotesk-Bold';
+}
+    </style>
+</head>
+<body>
+
+    <div class="bg-blue-400 flex items-center justify-between h-20 px-8 top-0 sticky z-10">
+        <div><a class="flex items-center gap-2" href=""><img width="50" height="50" src="https://img.icons8.com/material-sharp/96/teardown.png" alt="teardown"/><span>logo</span></a></div>
+        <div class="flex items-center gap-4">
+            <ul class="flex items-center gap-4 [&>li>a]:px-6 [&>li>a]:py-2 [&>li>a:hover]:bg-blue-600 [&>li>a]:rounded-lg [&>li>a:hover]:text-white">
+                <li><a href="">nav</a></li>
+                <li><a href="">nav</a></li>
+                <li><a href="">nav</a></li>
+                <li ><a  class="flex items-center gap-4" href=""><img width="20" height="20" src="https://img.icons8.com/deco/48/expand-arrow.png" alt="expand-arrow"/>nav<img width="48" height="48" src="https://img.icons8.com/color/48/circled-user-male-skin-type-1-2--v1.png" alt="circled-user-male-skin-type-1-2--v1"/></a></li>
+            </ul>
+            <button class="rounded-lg bg-white text-black p-2 font-bold">click here</button>
+        </div>
+    </div>
+<!-- hero -->
+<div class="relative block text-center bg-slate-500 py-32 bg-center bg-cover bg-[url('./images/pexels-lulizler-3165335.jpg')] text-white">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <h1 class="relative text-7xl font-bold my-2 font-clash">Reinvent Your gaming ideas</h1>
+    <p class="relative my-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit earum aliquid debitis aspernatur numquam voluptatem!</p>
+    <button class="relative rounded-lg bg-white text-black p-2 font-bold">click here</button>
+</div>
+
+
+<!-- content -->
+
+<div class="grid grid-cols-3 gap-24 max-w-7xl my-6 mx-auto"> 
+    <div class="col-span-2"> 
+        <div class="card bg-base-100 w-full shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="bg-blue-200 col-span-1"> aside</div>
+</div>
+    
+</body>
+</html>
